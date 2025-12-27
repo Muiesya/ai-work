@@ -43,6 +43,19 @@ Example response:
 - After starting the server, open http://127.0.0.1:8000/ to use the minimal frontend.
 - Enter a question, click “询问” to send it to the API, and view the grounded answer plus sources and update dates.
 
+## Run in VS Code
+1. Install the **Python** extension and open this folder in VS Code.
+2. Create and select the virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+   In VS Code, use the Command Palette → “Python: Select Interpreter” → choose `.venv`.
+3. Copy `.env.example` to `.env` and set your `OPENAI_API_KEY`.
+4. Start debugging with the included launch config **“FastAPI: Drug Q&A”** (F5), which runs `uvicorn src.main:app --reload`.
+5. Visit http://127.0.0.1:8000/ for the web UI or `/docs` for Swagger.
+
 ## Safety Notes
 - The service is for general medication information only and does **not** provide personalized medical advice or dosing instructions.
 - Always consult a licensed clinician or pharmacist before making medication decisions.
