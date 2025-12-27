@@ -39,6 +39,10 @@ Example response:
 }
 ```
 
+### Simple Web UI
+- After starting the server, open http://127.0.0.1:8000/ to use the minimal frontend.
+- Enter a question, click “询问” to send it to the API, and view the grounded answer plus sources and update dates.
+
 ## Safety Notes
 - The service is for general medication information only and does **not** provide personalized medical advice or dosing instructions.
 - Always consult a licensed clinician or pharmacist before making medication decisions.
